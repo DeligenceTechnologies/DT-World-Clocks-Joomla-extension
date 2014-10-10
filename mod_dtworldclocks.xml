@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="1.0"
+	client="site"
+	method="upgrade">
+	<name>mod_dtworldclocks</name>
+	<author>Deligence Technologies</author>
+	<creationDate>Oct 2014</creationDate>
+	<copyright>Copyright (C) 2014 Deligence Technologies Pvt. Ltd. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@deligence.com</authorEmail>
+	<authorUrl>www.deligence.com</authorUrl>
+	<version>1.0.0</version>
+	<description>MOD_DT_WORLD_CLOCKS_XML_DESCRIPTION</description>
+	<files>
+		<filename module="mod_dtworldclocks">mod_dtworldclocks.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>mod_dtworldclocks.xml</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_dtworldclocks.ini</language>
+		<language tag="en-GB">en-GB.mod_dtworldclocks.sys.ini</language>
+	</languages>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_DT_WORLD_CLOCKS" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				
+				<field name="format" type="list" default="24h" label="MOD_DT_WORLD_CLOCKS_FORMAT">
+					<option value="24h">24h</option>
+					<option value="12h">12h</option>
+				</field>
+				<field name="layout" type="list" default="vertical" label="MOD_DT_WORLD_CLOCKS_LAYOUT">
+					<option value="vertical">Vertical</option>
+					<option value="horizontal">Horizontal</option>
+				</field>
+				<field name="show-timezone" type="list" default="yes" label="MOD_DT_WORLD_CLOCKS_CITY">
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</field>
+				<field name="cityAlignment" type="list" default="bottom" label="MOD_DT_WORLD_CLOCKS_CITY_ALIGN">
+					<option value="top">Top</option>
+					<option value="bottom">Bottom</option>
+					<option value="left">Left</option>
+					<option value="right">Right</option>
+				</field>
+				<field name="seconds" type="list" default="yes" label="MOD_DT_WORLD_CLOCKS_SECONDS">
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</field>
+				<field name="leadingZeros" type="list" default="yes" label="MOD_DT_WORLD_CLOCKS_ZEROS">
+					<option value="yes">Yes</option>
+					<option value="nothour">Not for hours</option>
+					<option value="no">Not at all</option>
+				</field>
+				<field name="date" type="list" default="format1" label="MOD_DT_WORLD_CLOCKS_DATE" description="MOD_DT_WORLD_CLOCKS_DATE_DESC">
+					<option value="no">No, don't display the date.</option>
+					<option value="format1">Yes. (YYYY-MM-DD)</option>
+					<option value="format2">Yes. (YYYY/MM/DD)</option>
+					<option value="format3">Yes. (DD/MM/YYYY)</option>
+					<option value="format4">Yes. (MM/DD/YYYY)</option>
+					<option value="format5">Yes. (16 Jan)</option>
+					<option value="format6">Yes. (Wed 16 Jan)</option>
+					<option value="format7">Yes. (Jan 16)</option>
+					<option value="format8">Yes. (Jan 16, 2013)</option>
+					<option value="format9">Yes. (Wed Jan 16)</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced">
+				<field name="note1" type="note" label="MOD_DT_WORLD_CLOCKS_CLOCK1" />
+				<field name="display1" type="list" default="yes" label="MOD_DT_WORLD_CLOCKS_SHOW">
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</field>
+				<field name="timezone1" type="timezone" default="-10" label="MOD_DT_WORLD_CLOCKS_TIMEZONE" description="MOD_DT_WORLD_CLOCKS_TIMEZONE_DESC" />
+				<field name="city1" type="text" default="Abidjan" label="MOD_DT_WORLD_CLOCKS_CITY_NAME" description="MOD_DT_WORLD_CLOCKS_CITY_NAME_DESC" />
+				
+				<field name="note2" type="note" label="MOD_DT_WORLD_CLOCKS_CLOCK2" />
+				<field name="display2" type="list" default="yes" label="MOD_DT_WORLD_CLOCKS_SHOW">
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</field>
+				<field name="timezone2" type="timezone" default="-10" label="MOD_DT_WORLD_CLOCKS_TIMEZONE" description="MOD_DT_WORLD_CLOCKS_TIMEZONE_DESC" />
+				<field name="city2" type="text" default="Abidjan" label="MOD_DT_WORLD_CLOCKS_CITY_NAME" description="MOD_DT_WORLD_CLOCKS_CITY_NAME_DESC" />
+				
+				<field name="note3" type="note" label="MOD_DT_WORLD_CLOCKS_CLOCK3" />
+				<field name="display3" type="list" default="yes" label="MOD_DT_WORLD_CLOCKS_SHOW">
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</field>
+				<field name="timezone3" type="timezone" default="-10" label="MOD_DT_WORLD_CLOCKS_TIMEZONE" description="MOD_DT_WORLD_CLOCKS_TIMEZONE_DESC" />
+				<field name="city3" type="text" default="Abidjan" label="MOD_DT_WORLD_CLOCKS_CITY_NAME" description="MOD_DT_WORLD_CLOCKS_CITY_NAME_DESC" />
+				
+				<field name="note4" type="note" label="MOD_DT_WORLD_CLOCKS_CLOCK4" />
+				<field name="display4" type="list" default="yes" label="MOD_DT_WORLD_CLOCKS_SHOW">
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</field>
+				<field name="timezone4" type="timezone" default="-10" label="MOD_DT_WORLD_CLOCKS_TIMEZONE" description="MOD_DT_WORLD_CLOCKS_TIMEZONE_DESC" />
+				<field name="city4" type="text" default="Abidjan" label="MOD_DT_WORLD_CLOCKS_CITY_NAME" description="MOD_DT_WORLD_CLOCKS_CITY_NAME_DESC" />
+				
+				<field name="note5" type="note" label="MOD_DT_WORLD_CLOCKS_OTHER" />
+				<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
